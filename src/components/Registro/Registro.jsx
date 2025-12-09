@@ -5,7 +5,7 @@ export const Registro = () => {
   const navigate = useNavigate();
 
   const manejarEnvio = () => {
-    navigate(home); // 🔥 Cambia al componente deseado
+    navigate(home); //
   };
 
   return (
