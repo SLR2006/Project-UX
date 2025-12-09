@@ -1,0 +1,159 @@
+.iphone16ProMax2 {
+  	width: 100%;
+  	height: 956px;
+  	position: relative;
+  	background-color: #fff;
+  	overflow: hidden;
+  	text-align: center;
+  	font-size: 24px;
+  	color: #000;
+  	font-family: Inter;
+}
+.ruraap {
+  	position: absolute;
+  	top: 142px;
+  	left: calc(50% - 19px);
+  	letter-spacing: -0.01em;
+  	line-height: 150%;
+  	font-weight: 600;
+}
+.icon {
+  	position: absolute;
+  	top: 253px;
+  	left: 63px;
+  	width: 125px;
+  	height: 125px;
+  	object-fit: cover;
+}
+.image1Icon {
+  	position: absolute;
+  	top: 393px;
+  	left: 63px;
+  	width: 125px;
+  	height: 125px;
+  	object-fit: cover;
+}
+.image2Icon {
+  	position: absolute;
+  	top: 533px;
+  	left: 63px;
+  	width: 125px;
+  	height: 125px;
+  	object-fit: cover;
+}
+.saldo {
+  	position: absolute;
+  	top: 193px;
+  	left: 79px;
+  	line-height: 150%;
+  	display: inline-block;
+  	text-align: left;
+  	width: 70px;
+  	height: 30px;
+}
+.enviarDinero {
+  	position: absolute;
+  	top: 288px;
+  	left: 212px;
+  	letter-spacing: -0.01em;
+  	line-height: 150%;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 165px;
+  	height: 55px;
+}
+.historialDeMovimientos {
+  	position: absolute;
+  	top: 448px;
+  	left: 212px;
+  	letter-spacing: -0.01em;
+  	line-height: 150%;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 165px;
+  	height: 55px;
+}
+.retirarDinero {
+  	position: absolute;
+  	top: 568px;
+  	left: 212px;
+  	letter-spacing: -0.01em;
+  	line-height: 150%;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 165px;
+  	height: 55px;
+}
+.ayuda {
+  	position: absolute;
+  	top: 723px;
+  	left: 212px;
+  	letter-spacing: -0.01em;
+  	line-height: 140%;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 165px;
+  	height: 55px;
+}
+.iphone16ProMax2Child {
+  	position: absolute;
+  	top: 288px;
+  	left: 212px;
+  	width: 165px;
+  	height: 55px;
+}
+.iphone16ProMax2Item {
+  	position: absolute;
+  	top: 193px;
+  	left: 207px;
+  	width: 150px;
+  	height: 30px;
+}
+.iphone16ProMax2Inner {
+  	position: absolute;
+  	top: 568px;
+  	left: 212px;
+  	width: 165px;
+  	height: 55px;
+}
+.rectangleIcon {
+  	position: absolute;
+  	top: 723px;
+  	left: 212px;
+  	width: 165px;
+  	height: 55px;
+}
+.iphone16ProMax2Child2 {
+  	position: absolute;
+  	top: 448px;
+  	left: 212px;
+  	width: 165px;
+  	height: 55px;
+}
+.icon2 {
+  	position: absolute;
+  	top: 688px;
+  	left: 63px;
+  	width: 125px;
+  	height: 125px;
+  	object-fit: cover;
+}
+.div {
+  	position: absolute;
+  	top: 193px;
+  	left: 207px;
+  	line-height: 150%;
+  	font-weight: 600;
+  	display: inline-block;
+  	width: 150px;
+  	height: 30px;
+}
+

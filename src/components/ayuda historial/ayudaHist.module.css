@@ -1,0 +1,71 @@
+.iphone16ProMax8 {
+  	width: 100%;
+  	height: 956px;
+  	position: relative;
+  	background-color: #fff;
+  	overflow: hidden;
+  	text-align: center;
+  	font-size: 24px;
+  	color: #000;
+  	font-family: Inter;
+}
+.ruraap {
+  	position: absolute;
+  	top: 204px;
+  	left: calc(50% - 51px);
+  	letter-spacing: -0.01em;
+  	line-height: 150%;
+  	font-weight: 600;
+}
+.comprobarTransferencias {
+  	position: absolute;
+  	top: 145px;
+  	left: 62px;
+  	letter-spacing: -0.02em;
+  	line-height: 140%;
+  	font-weight: 600;
+}
+.text {
+  	position: absolute;
+  	top: 281px;
+  	left: 71px;
+  	letter-spacing: -0.01em;
+  	line-height: 150%;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 299px;
+  	height: 483px;
+}
+.iphone16ProMax8Child {
+  	position: absolute;
+  	top: 339px;
+  	left: 156px;
+  	background-color: #d9d9d9;
+  	width: 13px;
+  	height: 2px;
+}
+.enSuCelular {
+  	position: absolute;
+  	top: 260px;
+  	left: 53px;
+  	letter-spacing: -0.01em;
+  	line-height: 150%;
+  	font-weight: 600;
+  	white-space: pre-wrap;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 334px;
+  	height: 550px;
+}
+.iphone16ProMax8Item {
+  	position: absolute;
+  	top: 260px;
+  	left: 53px;
+  	border: 1px solid #000;
+  	box-sizing: border-box;
+  	width: 334px;
+  	height: 550px;
+}

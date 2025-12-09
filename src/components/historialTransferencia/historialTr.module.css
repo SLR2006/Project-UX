@@ -1,0 +1,61 @@
+.iphone16ProMax3 {
+  	width: 100%;
+  	height: 956px;
+  	position: relative;
+  	background-color: #fff;
+  	overflow: hidden;
+  	text-align: center;
+  	font-size: 24px;
+  	color: #000;
+  	font-family: Inter;
+}
+.historial {
+  	position: absolute;
+  	top: 226px;
+  	left: 80px;
+  	font-size: 20px;
+  	line-height: 150%;
+  	font-weight: 600;
+  	display: inline-block;
+  	width: 82px;
+  	height: 23px;
+}
+.exitosa {
+  	position: absolute;
+  	top: 275px;
+  	left: 60px;
+  	line-height: 150%;
+  	font-weight: 600;
+  	white-space: pre-wrap;
+  	display: inline-block;
+  	width: 320px;
+}
+.exitosa2 {
+  	position: absolute;
+  	top: 364px;
+  	left: 60px;
+  	line-height: 150%;
+  	font-weight: 600;
+  	white-space: pre-wrap;
+  	display: inline-block;
+  	width: 320px;
+}
+.cancelada {
+  	position: absolute;
+  	top: 442px;
+  	left: 60px;
+  	line-height: 150%;
+  	font-weight: 600;
+  	white-space: pre-wrap;
+  	display: inline-block;
+  	width: 320px;
+}
+.ruraap {
+  	position: absolute;
+  	top: 164px;
+  	left: calc(50% - 13px);
+  	letter-spacing: -0.01em;
+  	line-height: 150%;
+  	font-weight: 600;
+}
+

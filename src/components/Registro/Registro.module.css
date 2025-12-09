@@ -1,0 +1,129 @@
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.iphone16ProMax1 {
+  width: 100%;
+  height: 956px;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: left;
+  font-size: 20px;
+  color: #000;
+  font-family: Inter;
+}
+
+/* TÍTULO */
+.inicioDeSesion {
+  position: absolute;
+  top: 282px;
+  left: 83px;
+  font-size: 36px;
+  letter-spacing: -0.01em;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  width: 280px;
+}
+
+/* LABEL Número de teléfono */
+.numeroDeTelefonoContainer {
+  position: absolute;
+  top: 397px;
+  left: 63px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  width: 225px;
+  height: 36px;
+  pointer-events: none; /* 🔥 No bloquea clics */
+}
+
+.numeroDeTelefonoContainer2 {
+  width: 100%;
+}
+
+.numeroDeTelefon {
+  letter-spacing: -0.01em;
+}
+
+/* INPUT Número de teléfono */
+.inputTelefono {
+  position: absolute;
+  top: 454px;
+  left: 63px;
+  width: 314px;
+  height: 40px;
+  color : #000;
+  background: rgba(217, 217, 217, 0.15);
+  border: 1px solid #000;
+  box-sizing: border-box;
+
+  padding-left: 10px;
+  font-size: 18px;
+
+  z-index: 1000; /* 🔥 siempre arriba */
+}
+
+/* LABEL Contraseña */
+.contrasea {
+  position: absolute;
+  top: 527px;
+  left: 63px;
+  letter-spacing: -0.01em;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  width: 148px;
+  height: 29px;
+  pointer-events: none; /* 🔥 No bloquea el input */
+}
+
+/* INPUT Contraseña */
+.inputContrasena {
+  position: absolute;
+  top: 581px;
+  left: 63px;
+  width: 314px;
+  height: 40px;
+  color: #000;
+  background: rgba(217, 217, 217, 0.15);
+  border: 1px solid #000;
+  box-sizing: border-box;
+
+  padding-left: 10px;
+  font-size: 18px;
+
+  z-index: 1000; /* 🔥 arriba */
+}
+
+/* BOTÓN */
+.enviar {
+  position: absolute;
+  top: 717px;
+  left: 170px;
+  padding: 10px 20px;
+  border: 1px solid #000	;
+  background-color: aliceblue;
+  color: #000;
+  letter-spacing: -0.01em;
+  line-height: 150%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+
+
+
+
