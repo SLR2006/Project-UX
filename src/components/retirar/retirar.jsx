@@ -1,19 +1,36 @@
-import styles from './IPhone16ProMax6.module.css';
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import styles from "./retirar.module.css";
 
+export const Retirar = ({ balance, onComplete }) => {
+  const navigate = useNavigate();
+  const [amount, setAmount] = useState("");
+  const [code, setCode] = useState("");
+  const [error, setError] = useState("");
 
-export const IPhone16ProMax6 = () => {
-  	return (
-    		<div className={styles.iphone16ProMax6}>
-      			<div className={styles.retirarDinero}>Retirar dinero</div>
-      			<div className={styles.ruraap}>Ruraap</div>
-      			<div className={styles.cuantoVasA}>Cuanto vas a retirar</div>
-      			<div className={styles.iphone16ProMax6Child} />
-      			<div className={styles.codigoDeRetiro}>Codigo de retiro</div>
-      			<div className={styles.iphone16ProMax6Item} />
-      			<div className={styles.iphone16ProMax6Inner} />
-      			<div className={styles.enviar}>Enviar</div>
-      			<div className={styles.generarCodigo}>Generar codigo</div>
-      			<img className={styles.rectangleIcon} alt="" />
-      			<div className={styles.text}>Text</div>
-    		</div>);
+  const submit = (event) => {
+    event.preventDefault();
+    const numericAmount = Number(amount);
+    if (!Number.isFinite(numericAmount) || numericAmount <= 0) return setError("Ingresa un monto válido.");
+    if (numericAmount > balance) return setError("No tienes saldo suficiente.");
+    if (!/^\d{4,8}$/.test(code)) return setError("Ingresa un código de retiro válido.");
+    onComplete(numericAmount);
+    navigate("/historial");
+  };
+
+  return (
+    <main className={styles.screen}>
+      <Link to="/home" className={styles.back}>← Volver</Link>
+      <form className={styles.card} onSubmit={submit}>
+        <span className={styles.brand}>Ruraap</span>
+        <h1>Retirar dinero</h1>
+        <label htmlFor="withdrawAmount">Cuánto vas a retirar</label>
+        <input id="withdrawAmount" type="number" min="1" value={amount} onChange={(event) => setAmount(event.target.value)} placeholder="$ 0" />
+        <label htmlFor="withdrawCode">Código de retiro</label>
+        <input id="withdrawCode" value={code} onChange={(event) => setCode(event.target.value)} inputMode="numeric" placeholder="Ingresa el código" />
+        {error && <p className={styles.error} role="alert">{error}</p>}
+        <button type="submit">Confirmar retiro</button>
+      </form>
+    </main>
+  );
 };

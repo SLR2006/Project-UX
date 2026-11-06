@@ -1,23 +1,21 @@
-import styles from 'home.module.css';
-export const home = () => {
-  	return (
-    		<div className={styles.iphone16ProMax2}>
-      			<div className={styles.ruraap}>Ruraap</div>
-      			<img className={styles.icon} alt="" />
-      			<img className={styles.image1Icon} alt="" />
-      			<img className={styles.image2Icon} alt="" />
-      			<b className={styles.saldo}>Saldo</b>
-      			<div className={styles.enviarDinero}>Enviar dinero</div>
-      			<div className={styles.historialDeMovimientos}>Historial de movimientos</div>
-      			<div className={styles.retirarDinero}>Retirar dinero</div>
-      			<div className={styles.ayuda}>Ayuda</div>
-      			<img className={styles.iphone16ProMax2Child} alt="" />
-      			<img className={styles.iphone16ProMax2Item} alt="" />
-      			<img className={styles.iphone16ProMax2Inner} alt="" />
-      			<img className={styles.rectangleIcon} alt="" />
-      			<img className={styles.iphone16ProMax2Child2} alt="" />
-      			<img className={styles.icon2} alt="" />
-      			<div className={styles.div}>150.0000</div>
-    		</div>);
-};
-navigate(home);
+import { Link } from "react-router-dom";
+import styles from "./home.module.css";
+
+export const Home = ({ balance }) => (
+  <main className={styles.screen}>
+    <header className={styles.header}>
+      <span className={styles.brand}>Ruraap</span>
+      <Link to="/" className={styles.logout}>Salir</Link>
+    </header>
+    <section className={styles.balanceCard}>
+      <span>Saldo disponible</span>
+      <strong>${balance.toLocaleString("es-CO")}</strong>
+    </section>
+    <nav className={styles.actions} aria-label="Acciones de la cuenta">
+      <Link to="/transferir">Enviar dinero</Link>
+      <Link to="/historial">Historial de movimientos</Link>
+      <Link to="/retirar">Retirar dinero</Link>
+      <Link to="/ayuda">Ayuda</Link>
+    </nav>
+  </main>
+);

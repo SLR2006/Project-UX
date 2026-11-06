@@ -1,15 +1,14 @@
-import styles from './IPhone16ProMax4.module.css';
+import { Link } from "react-router-dom";
+import styles from "./ayuda.module.css";
 
-
-export const IPhone16ProMax4 = () => {
-  	return (
-    		<div className={styles.iphone16ProMax4}>
-      			<div className={styles.comoEnviarDinero}>Como enviar dinero:<br/></div>
-        				<div className={styles.comprobarTransferencias}>Comprobar transferencias:</div>
-        				<div className={styles.ruraap}>Ruraap</div>
-        				<div className={styles.clickAqui}>Click aqui</div>
-        				<div className={styles.clickAqui2}>Click aqui</div>
-        				<div className={styles.iphone16ProMax4Child} />
-        				<div className={styles.iphone16ProMax4Item} />
-      			</div>);
-      			};
+export const Ayuda = () => (
+  <main className={styles.screen}>
+    <Link to="/home" className={styles.back}>← Volver</Link>
+    <section className={styles.card}>
+      <span className={styles.brand}>Ruraap</span>
+      <h1>Ayuda</h1>
+      <Link to="/ayuda/transferir">¿Cómo enviar dinero?</Link>
+      <Link to="/ayuda/historial">¿Cómo revisar transferencias?</Link>
+    </section>
+  </main>
+);

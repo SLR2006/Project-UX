@@ -1,61 +1,11 @@
-.iphone16ProMax3 {
-  	width: 100%;
-  	height: 956px;
-  	position: relative;
-  	background-color: #fff;
-  	overflow: hidden;
-  	text-align: center;
-  	font-size: 24px;
-  	color: #000;
-  	font-family: Inter;
-}
-.historial {
-  	position: absolute;
-  	top: 226px;
-  	left: 80px;
-  	font-size: 20px;
-  	line-height: 150%;
-  	font-weight: 600;
-  	display: inline-block;
-  	width: 82px;
-  	height: 23px;
-}
-.exitosa {
-  	position: absolute;
-  	top: 275px;
-  	left: 60px;
-  	line-height: 150%;
-  	font-weight: 600;
-  	white-space: pre-wrap;
-  	display: inline-block;
-  	width: 320px;
-}
-.exitosa2 {
-  	position: absolute;
-  	top: 364px;
-  	left: 60px;
-  	line-height: 150%;
-  	font-weight: 600;
-  	white-space: pre-wrap;
-  	display: inline-block;
-  	width: 320px;
-}
-.cancelada {
-  	position: absolute;
-  	top: 442px;
-  	left: 60px;
-  	line-height: 150%;
-  	font-weight: 600;
-  	white-space: pre-wrap;
-  	display: inline-block;
-  	width: 320px;
-}
-.ruraap {
-  	position: absolute;
-  	top: 164px;
-  	left: calc(50% - 13px);
-  	letter-spacing: -0.01em;
-  	line-height: 150%;
-  	font-weight: 600;
-}
-
+.screen { min-height: 100vh; box-sizing: border-box; display: grid; place-items: center; padding: 24px; background: #f3f5f9; }
+.back { position: fixed; top: 24px; left: 24px; color: #1769aa; font-weight: 700; text-decoration: none; }
+.card { width: min(100%, 640px); padding: 32px; border-radius: 20px; background: #fff; box-shadow: 0 16px 40px rgba(16, 36, 64, .12); }
+.brand { display: block; color: #1769aa; font-size: 1.5rem; font-weight: 800; text-align: center; }
+h1 { color: #10243f; text-align: center; }
+.list { display: grid; gap: 12px; padding: 0; list-style: none; }
+.list li { display: flex; justify-content: space-between; gap: 16px; padding: 16px; border: 1px solid #d9e2ec; border-radius: 12px; color: #10243f; }
+.list span { display: grid; gap: 4px; }
+.list small { color: #627d98; }
+.negative { color: #b42318; }
+.neutral { color: #1769aa; }
